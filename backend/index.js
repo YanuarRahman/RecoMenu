@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import session from "express-session";
 import dontenv from "dotenv";
-import db from "./config/Database.js";
+// import db from "./config/Database.js";
 import UserRoute from "./routes/UserRoute.js";
 import MenuRoute from "./routes/MenuRoute.js";
 
@@ -10,10 +10,11 @@ dontenv.config();
 
 const app = express();
 
-// sync model for generate table auto
-(async()=>{
-    await db.sync();
-})();
+// sync model for generate table autoa
+
+// (async()=>{
+//     await db.sync();
+// })();
 
 app.use(session({
     secret: process.env.SESS_SECRET,

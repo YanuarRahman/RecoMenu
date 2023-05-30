@@ -20,6 +20,21 @@ const Users = db.define('users',{
             len: [6,100]
         }
     },
+    email:{
+        type:DataTypes.STRING,
+        allowNull: false,
+        validate:{
+            notEmpty:true,
+            isEmail:true
+        }
+    },
+    password:{
+        type:DataTypes.STRING,
+        allowNull: false,
+        validate:{
+            notEmpty:true,
+        }
+    },
     role:{
         type:DataTypes.STRING,
         allowNull: false,

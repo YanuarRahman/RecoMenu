@@ -1,6 +1,6 @@
 import {Sequelize} from 'sequelize';
 
-const db = new Sequelize('db_recomenu','root','',{
+const db = new Sequelize('reco_menu','root','',{
     host: "localhost",
     dialect: "mysql"
 });

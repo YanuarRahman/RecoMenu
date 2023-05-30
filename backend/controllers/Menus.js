@@ -1,21 +1,21 @@
 import Menu from "../models/MenuModel.js";
 
-export const getMenus = (rec , res) =>{
+export const getMenus = (req , res) =>{
 
 }
 
-export const getMenuById = (rec , res) =>{
+export const getMenuById = (req , res) =>{
     
 }
 
-export const createMenu = (rec , res) =>{
+export const createMenu = (req , res) =>{
     
 }
 
-export const updateMenu = (rec , res) =>{
+export const updateMenu = (req , res) =>{
     
 }
 
-export const deleteMenu = (rec , res) =>{
+export const deleteMenu = (req , res) =>{
     
 }
