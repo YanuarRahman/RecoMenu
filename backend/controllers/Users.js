@@ -47,24 +47,22 @@ export const createUser = async(req , res) =>{
 
 export const updateUser = async(req , res) =>{
     const user = await User.findOne({
-
         where:{
             uuid: req.params.id
         }
     });
-    if(!user) return res.status(404).json({msg: "User Tidak Ditemukan!!!"})
+    if(!user) return res.status(404).json({msg:"User Tidak Ditemukan!!!"});
     const {username, email, password, confPassword, role} = req.body;
     // validate
-    let hasPassword;
+    let hashPassword;
     if(password === "" || password === null){
         hashPassword = user.password
     }else{
-        hasPassword = await argon2.hash(password)
+        hashPassword = await argon2.hash(password);
     }
-    if( password !== confPassword) return res.status(400).json({msg: "Konfirmasi Password Tidak Valid"});
-
+    if(password !== confPassword) return res.status(400).json({msg:"Konfirmasi Password Tidak Valid"});
     try{
-        // insert
+        // update
         await User.update({
             username: username,
             email: email,
@@ -83,7 +81,6 @@ export const updateUser = async(req , res) =>{
 
 export const deleteUser = async(req , res) =>{
     const user = await User.findOne({
-
         where:{
             uuid: req.params.id
         }
@@ -96,7 +93,7 @@ export const deleteUser = async(req , res) =>{
                 id: user.id
             }
         });
-        res.status(200).json({msg: "Hapus Berhasil!!"});
+        res.status(200).json({msg: "Hapus Data Berhasil!!"});
     }catch(error){
         res.status(400).json({msg: error.message});
     }
