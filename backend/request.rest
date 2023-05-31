@@ -60,3 +60,20 @@ GET http://localhost:5000/me
 // logout
 ###
 DELETE  http://localhost:5000/logout
+
+
+// MEnu get all
+###
+GET http://localhost:5000/menus
+
+//create menu
+###
+POST http://localhost:5000/menus
+Content-Type: application/json
+
+{
+    "nama" : "AyamGoren",
+    "rasa" : "Pedas",
+    "qty": 10,
+    "harga": 15000,
+}
