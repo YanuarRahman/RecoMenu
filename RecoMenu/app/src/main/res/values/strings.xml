@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">RecoMenu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in_now">Sign in now</string>
+    <string name="please_sign_in">Please sign in to continue our app</string>
+    <string name="text_login">Login</string>
+
+    <string name="menu_title_bottom_nav_home">Home</string>
+    <string name="validation_invalid_email">Email format is invalid</string>
+    <string name="validation_invalid_password">Password format is invalid</string>
+    <string name="email">Email</string>
+    <string name="login_string">Login</string>
+    <string name="todo">TODO</string>
+    <string name="email_sign_in">Email</string>
+    <string name="password_sign_in">Password</string>
+    <string name="sign_in_button">Sign in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="question_account">Don’t have an account?</string>
+    <string name="sign_up_button">Sign up</string>
+    <string name="sign_up_now">Sign up now</string>
+    <string name="click_the_button">Click the button below for sign up</string>
+    <string name="pesan">Order</string>
+    <string name="back_button">Button</string>
+    <string name="mau_makan_apa">Mau makan apa?</string>
+    <string name="search_food">Search food</string>
+    <string name="back_button_recommendation">Button</string>
+    <string name="back">back</string>
+    <string name="home">Home</string>
+    <string name="order">Order</string>
+    <string name="email_hint">email</string>
+    <string name="password_hint">password</string>
+    <string name="or_connect">Or Connect</string>
+    <string name="name_form_registration">Nama:</string>
+    <string name="name_input_form">Nama</string>
+    <string name="email_form_registration">Email:</string>
+    <string name="email_input_form">Email</string>
+    <string name="no_hp">No HP:</string>
+    <string name="phone_number">phone number</string>
+</resources>
