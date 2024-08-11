@@ -1,3 +1,3 @@
 # RecoMenu (Bangkit Academy)
 RecoMenu - express js 
-Face recognition still 
+Face recognition
