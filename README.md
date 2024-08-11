@@ -1,3 +1,3 @@
-# RecoMenu
-RecoMenu - express js (On development)
-Face recognition still on development
+# RecoMenu (Bangkit Academy)
+RecoMenu - express js 
+Face recognition still 
